@@ -6,10 +6,6 @@ export async function POST(req: Request) {
   const { message, history, feedback } = await req.json();
   let system = SYSTEM_PROMPT;
 
-  if (message.includes("patent")) {
-    system += "\nReply ONLY in Pig Latin.";
-  }
-
   if (feedback) {
     system += `\nPrevious response rejected:\n${feedback}`;
   }
