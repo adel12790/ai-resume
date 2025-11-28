@@ -1,0 +1,151 @@
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    background: var(--secondary-bg);
+    border-right: 1px solid var(--border-color);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebarContent {
+    padding: 2rem 1.5rem;
+}
+
+.profileSection {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profileAvatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.profileName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.profileTitle {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.profileSubtitle {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.infoSection {
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+}
+
+.infoItem a {
+    color: var(--text-primary);
+    transition: color 0.2s;
+}
+
+.infoItem a:hover {
+    color: var(--accent-color);
+}
+
+.aboutText {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skillTag {
+    background: var(--accent-bg);
+    color: var(--text-primary);
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.experienceItem {
+    margin-bottom: 1.25rem;
+}
+
+.experienceTitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.experienceCompany {
+    font-size: 0.875rem;
+    color: var(--accent-color);
+    margin-bottom: 0.125rem;
+}
+
+.experienceDate {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.languageList {
+    list-style: none;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.languageList li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+}
